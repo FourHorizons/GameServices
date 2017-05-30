@@ -48,7 +48,7 @@ public class Application {
 		LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
 		em.setDataSource(dataSource());
 		em.setJpaVendorAdapter(jpaVendorAdapter());
-		em.setPackagesToScan("com.horizon.web.gameservice.model");
+		em.setPackagesToScan("com.fourhorizons.web.service.model");
 		return em;
 	}
 

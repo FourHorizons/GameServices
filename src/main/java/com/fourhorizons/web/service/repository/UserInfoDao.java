@@ -10,6 +10,6 @@ import com.fourhorizons.web.service.model.UserInfo;
 
 public interface UserInfoDao extends PagingAndSortingRepository<UserInfo, Integer> {
 
-	@Query("select a from Person a where upper(a.name) like upper(:name)")
+	@Query("select a from UserInfo a where upper(a.name) like upper(:name)")
     List<UserInfo> listByName(@Param("name") String name);
 }
